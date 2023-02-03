@@ -1,12 +1,23 @@
-/*[class *= col]{
+[class *= col]{
     background-color: aqua;
     padding: 1rem;
     border-radius: 5px;
     top: 2rem;
 
-}*/
+}
 
 [class *= container]{
     border-radius: 5px;
     padding: 8rem 1rem;
+    margin: 1rem;
 }
+
+#aside{
+
+    background-color: red;
+}
+
+/*.aside{
+    background-color: black;
+    color: blue;
+}*/
