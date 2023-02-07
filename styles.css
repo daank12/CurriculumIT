@@ -1,5 +1,7 @@
 @import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
-
+body{
+    
+}
 [class *= col]{
     /*background-color: aqua;*/
     padding: 1rem;
@@ -42,11 +44,37 @@
     justify-content: center;
     padding-bottom: 30px;
     margin-bottom: 30px;
+    height: fit-content;
 }
 
 aside img{
     width: 3rem;
     height: 100%;
+}
+.nav-container{
+    display: flex;
+    box-sizing: content-box;
+    align-self: flex-end;
+    border-radius: 0 5px 0 5px;
+    background-color: orangered;
+    border: 100px;
+    width: fit-content;
+    
+}
+.navbar{
+    flex-direction: row-reverse;
+    font-weight: bolder;
+}
+.nav__item a{
+    position: relative;
+    padding:5px;
+    text-decoration: none;
+    color: black;
+    align-items: end;
+}
+.nav__item a:hover{
+    color: aquamarine;
+    cursor: pointer;
 }
 
 #main-info{
