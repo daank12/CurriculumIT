@@ -11,6 +11,7 @@
     height:max-content;
     display: flex;
     justify-content: space-between;
+    
 
 }
 [class *= container]{
@@ -20,10 +21,19 @@
     width: 100%;
     align-content: space-around;
 }
+[class *= box]{
+    display: inline-block;
+}
 .contenedor{
     justify-content: space-between;
     padding-bottom: 30px;
     margin-bottom: 30px;
+    
+}
+.row-grid{
+    
+    justify-content: flex-start;
+
     
 }
 #aside{ 
@@ -43,6 +53,7 @@ aside img{
     position: relative;
     background-color: red;
     top: 10%;
+    display: grid;
 }
 .info-relleno{
     background-color: blueviolet;
