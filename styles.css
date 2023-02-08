@@ -1,35 +1,36 @@
 @import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
-body{
-    
-}
+
 [class *= col]{
     /*background-color: aqua;*/
-    padding: 1rem;
-    border-radius: 5px;
-    top: 2rem;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    
+
 
 }
 [class *= row]{
     height:max-content;
     display: flex;
-    justify-content: space-between;
+    
     
 
 }
 [class *= container]{
-    display: flexbox;
-    border-radius: 5px;
-    /* padding: 1rem; */
+    border-radius: 10px;
     width: 100%;
-    align-content: space-around;
+    height: fit-content;
+
+   
 }
 [class *= box]{
     display: inline-block;
 }
+
 .contenedor{
-    justify-content: space-between;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    justify-content: space-evenly;
+    margin: 8vh 8vh 8vh 0vh;
+    padding: 0;
     
 }
 .row-grid{
@@ -39,35 +40,48 @@ body{
     
 }
 #aside{ 
-    align-items: center;
+    border: 0;
     background-color: red;
-    justify-content: center;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
+    padding: 8vh;
+    
+    
     height: fit-content;
+    
+    
+    
 }
 
 aside img{
     width: 3rem;
     height: 100%;
+    border-radius: 50%;
+    justify-content: center;
+}
+.separation{
+    border: 1px solid black;
+    height: 2px;
+    width: 100%;
 }
 .nav-container{
     display: flex;
     box-sizing: content-box;
+    margin-right: 13px;
+    padding: 5px;
     align-self: flex-end;
     border-radius: 0 5px 0 5px;
     background-color: orangered;
-    border: 100px;
+    border: 10px;
     width: fit-content;
     
 }
 .navbar{
     flex-direction: row-reverse;
     font-weight: bolder;
+    align-self: flex-end;
 }
 .nav__item a{
     position: relative;
-    padding:5px;
+    padding: 20px;
     text-decoration: none;
     color: black;
     align-items: end;
@@ -87,6 +101,15 @@ aside img{
     background-color: blueviolet;
     margin: 30px;
     border-radius: 5px;
+}
+.progress_container{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.gallery-grid{
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 /*.aside{
     background-color: black;
