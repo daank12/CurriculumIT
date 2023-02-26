@@ -3,7 +3,7 @@ let contactButton = document.getElementById('contactButton');
 let detailsOn = document.getElementsByClassName('details-info');
 let showContent = document.getElementById('showContact');
 
-document.addEventListener('click', function () {
+document.addEventListener('click', (contactButton, MouseEvent) =>{
         console.log('click');
         var x = document.getElementById("details-info");
         if (x.style.display === "none" && showContent.innerText == "Mostrar Contactos") {
