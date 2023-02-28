@@ -90,6 +90,7 @@ box-sizing: inherit;
     width: 100%;
     /* height: fit-content; */
     margin-top: 2vh;
+    padding-left: 4vh;
 }
 [class *= box]{
     display: inline-block;
@@ -137,6 +138,11 @@ body{
     
     
 }
+.aside_control{
+    justify-self: start;
+    width: 80%;
+    object-fit: contain;
+}
 .aside_photo{
     /* display: flex; */
     /* flex-flow: row; */
@@ -147,13 +153,14 @@ body{
     /* padding:10px; */
     align-items: flex-start;
     font-size: var(--font-mobile-size);
-    
+    object-fit: contain;
    
     position: relative;
     
     
     padding-bottom: 4vh;
     justify-self: center;
+    align-self: center;
     
     
 
@@ -161,7 +168,7 @@ body{
 }
 .aside_photo figure{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     margin: 0;
 }
 .aside_photo div{
@@ -181,36 +188,46 @@ body{
 }
 aside img{
     display: flex;
-    width: 15vh;
+    width: 32vh;
     height: auto;
     border-radius: 40%;
     justify-content: center;
     box-shadow: var(--box-shadow-24);
     border: 1px solid var(--bs-dark);
-    margin: 0 0vh 0 0vh;
+    margin: 0 0vh 4vh 8vh;
     object-fit: cover;
+}
+.mail, .tel, .location, .job{
+    object-fit: contain;
+    font-size: x-small;
+    color: var(--color-accent);
+    margin: 0;
+    padding: 0;
+}
+.personal_info{
+    width: 100%;
 }
 
 
 .separation{
+    display: grid;
     border: 1px solid var(--bs-dark);
     box-shadow: var(--box-shadow-12);
     height: 2px;
-    width: 80%;
+    width: 95%;
     color: var(--bs-dark);
     justify-self: center;
+    margin: 0vh 0vh 2vh 2vh;
 }
-#contactButton {
-    display: flex;
-    justify-self: end;
-    
-}
+
 .showContent{
     cursor: pointer;
 }
 .btn{
-    position:relative;
-    right: 0px;
+    display: flex;
+    justify-self: end;
+    position:static;
+    /* right: 0px; */
 
     background: var(--color-gradient-border-gray);
     border-radius: var(--radius-14);
@@ -239,6 +256,8 @@ aside img{
     width: fit-content;
     flex-wrap: wrap;
     float: none;
+    margin: 0 0 2vh 0;
+    padding: 0;
     
     
 }
@@ -300,6 +319,7 @@ aside img{
     top: 10%;
     padding-top: 2vh;
     display: grid;
+    
 }
 .info-relleno{
     background-color: var(--bs-red);
@@ -420,6 +440,9 @@ aside img{
     }
     .contenedor{
         margin: 2vh 0vh 2vh 8vh;
+    }
+    #main-info{
+        margin-left: 20vh;
     }
 
     #aside{

@@ -14,29 +14,34 @@
 <div class="main">
     <div class="container">
         <div class="section">
-            <button class="btn--small" id="example">Change example</button>
+            <button class="btn--small" id="example">Generate example</button>
         </div>
     </div>
 <div class="container-fluid xl-12"> 
         <div class="contenedor row col-12 ">
             <!-- Barra lateral -->
-            <aside id="aside" class="col-md-2">
+            <aside id="aside" class="col-md-2 col-xl-2">
                 <button id="contactButton"class="btn btn--small ">
                     <span id="showContact">Show Contact</span>
                 </button>
                 <!--Mi foto-->
+                <div class="aside_control">
                 <div class="aside_photo col-sm-1">
                     <figure>
                         <img src="" class="picture"/>
                     </figure>
-                    <div>
+                    <div class="personal_info">
+                    
                         <h4 class="name">John Doe</h4>
                         <div class="job">Developer</div>
+                        
                     </div>
+                </div>
                     
                 </div>
-                <div class="separation"></div>
+                
                 <div class="aside_info col-sm-1">
+                    
                     
                     <div class="aside_contact">
                         
@@ -71,20 +76,21 @@
                     <div class="social"></div>
                 </div>
                 </div>
+            </div>
             </aside>  
             <!-- INFO -->
             
-            <div id="main-info"class=" col-xs-12 col-md-10">
+            <div id="main-info"class=" col-xs-12 col-md-10 col-xl-10">
                 <div class="container">
                     <!--Menu NAV-->
                     <div class="row navbar">
                         <div class="nav-container">
                             <ul class="nav navbar-text">
                                 <li class="nav__item ">
-                                    <a href="index.html">Home</a></li>
+                                    <a href="#home">Home</a></li>
                                 <li class="nav__item ">
-                                    <a href="Estudios.html">College</a></li>
-                                <li class="nav__item "><a href="Portfolio.html">Jobs</a></li>
+                                    <a href="#college">College</a></li>
+                                <li class="nav__item "><a href="#portfolio">Jobs</a></li>
                                 <!-- <li class="nav__item "><a href="Contacto.html">Contacto</a></li> -->
     
                             </ul>
@@ -93,7 +99,7 @@
                  </div>
                 
                     <!--Datos sobre mí-->
-                    <div class="container pb-0 pb-sm-2">
+                    <div class="container pb-0 pb-sm-2" id="home">
                         <h1 class="title title--h2 mt-3"> About me </h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Necessitatibus fugiat omnis quisquam nulla officia blanditiis molestias, 
@@ -105,7 +111,7 @@
                                 Expedita deleniti doloremque incidunt.</p>
                     </div>
                     <!--Que estoy haciendo-->
-                    <h2 class="title title--h2 mt-3"> ¿How i am doing?</h2>
+                    <h2 class="title title--h2 mt-3"> ¿What am i doing?</h2>
                     <div class="row">
                        <!--Web design--> 
                     <div class="col-sm-12 col-md-6 ">
@@ -116,7 +122,102 @@
                                 
                             </div>
                             </div>
+                            
                         </div>
+                        <div class="separation" style=""></div>
+
+                        
+
+
+                        <!--college-->
+                    <div class="container" id="college">
+                        
+                        <div class="row">
+                            <!--Universidad-->
+                            <h2 class="title title--h2">
+                                <span class="box-icon box">
+                                    University
+                                </span>
+                            </h2>   
+                        <div class="timeline">
+                            <article class="timeline__item">
+                                <h5 class="title title--h5 timeline__title">Arts</h5>
+                                <span class="timeline__period">2007-2009</span>
+                                <p class="timeline__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Quidem commodi possimus debitis voluptate mollitia necessitatibus quo totam dolore nobis, 
+                                    modi esse porro fugit eaque dolores, vel perferendis adipisci reiciendis earum.</p>
+                            </article>
+                            <!--Experiencia-->
+                            <h2 class="title title--h2">
+                                <span class="box-icon box">
+                                    Experience
+                                </span>
+                            </h2> 
+                        <div class="timeline">
+                            <article class="timeline__item">
+                                <h5 class="title title--h5 timeline__title">Music</h5>
+                                <span class="timeline__period">2010-2019</span>
+                                <p class="timeline__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Quidem commodi possimus debitis voluptate mollitia necessitatibus quo totam dolore nobis, 
+                                    modi esse porro fugit eaque dolores, vel perferendis adipisci reiciendis earum.</p>
+                            </article>
+                            
+                        </div>
+
+                        </div>
+                    </div>
+                    <!--Progress-->
+                    <div class="container progress_container">
+                        <div class="row">
+                            <h2 class="title title--h2">
+                                <span class="box-icon box">
+                                    My skill
+                                </span>
+                            </h2>
+                        <div>
+                            <p>HTML</p>
+                            <div class="progress">
+                                <div class="progress-bar-stripped bg-success" style="width: 20%;">20%</div>
+                            </div>
+                            </div>
+                    <div>
+                        <p>CSS</p>
+                        <div class="progress">
+                            <div class="progress-bar-stripped bg-info" style="width: 20%;">20%</div>
+                        </div>
+                        </div>
+                    <div>
+                        <p>Javascript</p>
+                        <div class="progress">
+                            <div class="progress-bar-stripped bg-secondary" style="width: 10%;">10%</div>
+                        </div>
+                        </div>
+                    <div>
+                    <p>Kotlin</p>
+                    <div class="progress">
+                        <div class="progress-bar-stripped bg-danger" style="width: 5%;"></div>5%</div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="separation"></div>
+                    </div>
+                    
+                    <!-- Portfolio -->
+                    
+
+                    <div class="gutter-sizer" id="portfolio"></div>
+                    <h4>Portfolio</h4>
+                    <div class="gallery-grid__item">
+                        <a>
+                            <div class="gallery-grid_image-wrap">
+                                <img href="" alt="CV page">
+                            </div>
+                            <div class="gallery-grid__caption">
+                                <h3 class="title title--h3">Cv EXAMPLE</h3>
+                                <span class="gallery-grid__category">Web design</span>
+                            </div>
+                        </a>
+                    </div>
                         <!-- Desarrollo Mobile
                         <div class="col-sm-12 col-md-6 ">
                             <div class="case-item box box-inner info-relleno">
