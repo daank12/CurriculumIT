@@ -70,7 +70,9 @@ box-sizing: inherit;
     /*background-color: aqua;*/
     /* padding: 0; */
     margin: 0;
+    
     border-radius: var(--radius-20);
+    
     
 
 
@@ -129,8 +131,10 @@ body{
     background-color: var(--bs-orange);
     /* padding: 2vh; */
     
-    height: min-content;
-    margin-bottom: 1vh;
+    /* height: fit-content; */
+    margin-bottom: 2vh;
+    right: 6vh;
+    
     
 }
 .aside_photo{
@@ -141,13 +145,15 @@ body{
     /* height: fit-content;  */
     /* margin: 0;*/
     /* padding:10px; */
-    align-items: stretch;
+    align-items: flex-start;
     font-size: var(--font-mobile-size);
-    margin-top: 2vh;
-    margin-bottom: 8vh;
+    
+   
     position: relative;
-    overflow-wrap: normal;
-    width: auto;
+    
+    
+    padding-bottom: 4vh;
+    justify-self: center;
     
     
 
@@ -159,46 +165,52 @@ body{
     margin: 0;
 }
 .aside_photo div{
-    margin: 2vh;
+    /* margin: 2vh; */
     right: 2vh;
-    width: 10%;
-    height: 5%;
+    /* width: 10%; */
+    /* height: 5%; */
     font-size: 10px;
-    position:static;
+    width: fit-content;
+    
 }
 .aside_photo p{
-    margin: 2vh;
+    /* margin: 2vh; */
     height: 10px ;
     display: grid;
     position: sticky;
 }
 aside img{
     display: flex;
-    width: 6rem;
+    width: 15vh;
     height: auto;
-    border-radius: 20%;
+    border-radius: 40%;
     justify-content: center;
     box-shadow: var(--box-shadow-24);
     border: 1px solid var(--bs-dark);
-    margin: 0 4vh 0 0vh;
+    margin: 0 0vh 0 0vh;
     object-fit: cover;
 }
+
 
 .separation{
     border: 1px solid var(--bs-dark);
     box-shadow: var(--box-shadow-12);
     height: 2px;
-    width: 100%;
+    width: 80%;
     color: var(--bs-dark);
+    justify-self: center;
 }
 #contactButton {
     display: flex;
     justify-self: end;
-    position:absolute;
+    
+}
+.showContent{
+    cursor: pointer;
 }
 .btn{
     position:relative;
-    right: 18px;
+    right: 0px;
 
     background: var(--color-gradient-border-gray);
     border-radius: var(--radius-14);
@@ -228,19 +240,18 @@ aside img{
     flex-wrap: wrap;
     float: none;
     
-    justify-content: start;
-    margin-left: 0;
-    padding-left: 0;
     
 }
 .details-info li{
     display: grid;
     grid-template-columns: 1fr auto;
+    
 }
 .details-info li span{
     margin: 0;
     padding: 0;
-    width: fit-content;
+    
+    
 }
 .nav-container{
     position: relative;
@@ -418,7 +429,7 @@ aside img{
    
     }
     .details-info{  
-        display: block !important;
+        display: flex !important;
     }
 
     #contactButton{
