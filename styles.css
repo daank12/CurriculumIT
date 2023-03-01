@@ -90,7 +90,7 @@ box-sizing: inherit;
     width: 100%;
     /* height: fit-content; */
     margin-top: 2vh;
-    padding-left: 4vh;
+    
 }
 [class *= box]{
     display: inline-block;
@@ -128,6 +128,7 @@ body{
 
 #aside{ 
     display: grid;
+   
     border: 0;
     background-color: var(--bs-orange);
     /* padding: 2vh; */
@@ -139,7 +140,7 @@ body{
     
 }
 .aside_control{
-    justify-self: start;
+    justify-self: center;
     width: 80%;
     object-fit: contain;
 }
@@ -151,7 +152,7 @@ body{
     /* height: fit-content;  */
     /* margin: 0;*/
     /* padding:10px; */
-    align-items: flex-start;
+    align-items:flex-start; 
     font-size: var(--font-mobile-size);
     object-fit: contain;
    
@@ -188,13 +189,13 @@ body{
 }
 aside img{
     display: flex;
-    width: 32vh;
+    width: 24vh;
     height: auto;
     border-radius: 40%;
     justify-content: center;
     box-shadow: var(--box-shadow-24);
     border: 1px solid var(--bs-dark);
-    margin: 0 0vh 4vh 8vh;
+    margin: 0 0vh 4vh 0vh;
     object-fit: cover;
 }
 .mail, .tel, .location, .job{
@@ -218,6 +219,10 @@ aside img{
     color: var(--bs-dark);
     justify-self: center;
     margin: 0vh 0vh 2vh 2vh;
+}
+.title{
+    /* margin-left: 4vh; */
+    padding-left: 4vh;
 }
 
 .showContent{
